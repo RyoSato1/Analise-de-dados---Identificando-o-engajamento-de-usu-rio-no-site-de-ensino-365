@@ -1,4 +1,4 @@
-# Analise de dados - Indentificando o engajamento de usuário no site de ensino 365
+# Analise de dados - Indentificando o engajamento de usuários no site de ensino 365
 
 Este projeto analisou os dados do site de ensino 365 com o intuito de entender se as implementações feitas no ano de 2021(novos cursos,exames e auxílio de carreira) influenciaram no aumento de engajamento de usuários, além disso foi analisado outras colunas para procurar possíveis correspondências com o nível de engajamento dos alunos.
 
