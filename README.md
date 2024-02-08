@@ -26,10 +26,15 @@ A terceira analise já é feita com outra base e deseja-se verificar a correlaç
 ## Conjunto de dados
 Os dados utilizados são dados reais do site 365, um site de ensino, ela foi entregue em um formato database mostrado abaixo.
 **adicionar a imagem**
+
 A tabela student_certificates tem as colunas de student_id, certificate_id e data_issued, elas representam os registros de certificados de cada aluno.
+
 A tabela student_info tem as colunas student_id e date_registered, e representa os registros dos alunos.
+
 A tabela student_purchases tem as colunas purchase_id, student_id, plan_id, date_purchased e date_refunded, e representam os registros de inscrições pagas dos alunos.
+
 A tabelas student_video_watched tem as colunas student_id, course_id, seconds_watched e date_watched, e representam os minutos de video assistidos na plataforma do site pelos alunos(pago ou não pago).
+
 ## Resultados
 
 ## Próximos passos
