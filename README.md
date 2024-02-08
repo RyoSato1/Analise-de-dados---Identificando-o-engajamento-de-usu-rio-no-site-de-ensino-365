@@ -17,9 +17,12 @@ O projeto está dividido por algumas pastas para melhorar sua organização, a p
 
 O primeiro passo do projeto era retirar os dados importantes para analise, para foi utilizado diversos métodos de verificação, agregação e criação de tabelas pelo mysql, todo o passo a passo da criação das tabelas está documentado no arquivo script que se encontra dentro da pasta sql. Assim obteve-se o output das tabelas com informações de tempo assistido em minutos de cada aluno no periodo de Q1 de 2021 e Q2 de 2022, e esses alunos foram divididos em alunos que assinam os serviços do site e os que não assinam. Além dessa tabela, foi criada mais uma que tem os minutos assistidos por cada aluno e a quantidade de certificados obtidos no site.
 
+
 Após a criação da tabelas, fez-se sua vizualização pelo python, no código Ajuste_de_dados_para_analise.ipynb, e fez-se alguns ajustes nos outlier a partir da resposta da sua distribuição, foi decidido permanecer com, somente, os  99% maiores percentis e assim as tabelas estavam prontos para analise.
 
+
 A primeira analise explorava a distribuição das tabelas que são separadas por períodos, e por meio do intervalo de confiança, pegar evidências, a partir das amostras de dados, de se o tempo assistido em Q2 2022 foi de fato maior que o tempo assistido em Q1 2021.A segunda analise, ainda com os mesmos dados, seria aplicar um teste de hipótese onde a hipótese nula implica que a média de minutos assistidos de Q1 2021 é igual ou maior que a de Q2 2022 e a hipótese alternativa é o complementar de que  a média de minutos assistidos de Q1 2022 é maior do que a de Q1 2021, essas analises são feitos separados para alunos com inscriçoes pagas e grátis.
+
 
 A terceira analise já é feita com outra base e deseja-se verificar a correlação entre o tempo assistido de cada aluno e a quantidade de certificados, assim como tentar predizer a quantidade de certificado em uma regressão linear.
 
@@ -27,13 +30,18 @@ A terceira analise já é feita com outra base e deseja-se verificar a correlaç
 Os dados utilizados são dados reais do site 365, um site de ensino, ela foi entregue em um formato database mostrado abaixo.
 **adicionar a imagem**
 
+
 A tabela student_certificates tem as colunas de student_id, certificate_id e data_issued, elas representam os registros de certificados de cada aluno.
+
 
 A tabela student_info tem as colunas student_id e date_registered, e representa os registros dos alunos.
 
+
 A tabela student_purchases tem as colunas purchase_id, student_id, plan_id, date_purchased e date_refunded, e representam os registros de inscrições pagas dos alunos.
 
+
 A tabelas student_video_watched tem as colunas student_id, course_id, seconds_watched e date_watched, e representam os minutos de video assistidos na plataforma do site pelos alunos(pago ou não pago).
+
 
 ## Resultados
 
